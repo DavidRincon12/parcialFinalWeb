@@ -8,11 +8,13 @@ import com.example.parcialFinalWeb.repositories.EstudianteRepository;
 
 @Service
 public class EstudianteService {
+
     @Autowired
     private EstudianteRepository estudianteRepository;
 
-    public Estudiante obtenerEstudiante(Long id) {
+    public Estudiante getEstudianteById(Integer id) {
         return estudianteRepository.findById(id).orElse(null);
     }
 }
+
 

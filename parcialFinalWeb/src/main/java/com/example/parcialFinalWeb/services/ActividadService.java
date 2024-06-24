@@ -8,11 +8,13 @@ import com.example.parcialFinalWeb.repositories.ActividadRepository;
 
 @Service
 public class ActividadService {
+
     @Autowired
     private ActividadRepository actividadRepository;
 
-    public Actividad crearActividad(Actividad actividad) {
+    public Actividad createActividad(Actividad actividad) {
         return actividadRepository.save(actividad);
     }
 }
+
 
